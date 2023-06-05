@@ -3,12 +3,13 @@ docker pull rabbitmq
 sudo apt update
 sudo snap install docker
 sudo docker pull rabbitmq
-docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.11-management
-sudo docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.11-management120  sudo apt install golang-go
 
- go run main.go
- go get github.com/streadway/amqp
- go mod init github.com/TutorialEdite/go-rabbitmq-tutorial
+sudo docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.11-management
+sudo apt install golang-go
+
+go run main.go
+go get github.com/streadway/amqp
+go mod init github.com/TutorialEdite/go-rabbitmq-tutorial
 
 
 
