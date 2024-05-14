@@ -6,8 +6,12 @@ sudo docker pull rabbitmq
 
 sudo docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.11-management
 
+// remember to set the security rule on aws to allow access with the console
+
 // run rabbitmq server!   
 // http://<dns>:15672
+
+// you can log into the mq server as "guest" / "guest" for uname / pw
 
 sudo apt install golang-go
 vi prod.go
